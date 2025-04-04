@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-camera me-2"></i>PhotoVision
+            </a>
+            <div class="d-flex align-items-center">
+                <div class="form-check form-switch me-3">
+                    <input class="form-check-input" type="checkbox" id="themeToggle">
+                    <label class="form-check-label" for="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">Discover Stunning Photography</h1>
+                <p class="hero-subtitle">Explore our curated collection of breathtaking images from around the world</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Search images...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Premium Images</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Photographers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+<!-- Main Content -->
+<main class="container my-5">
+  <h2 class="section-title text-center mb-5">Featured Collections</h2>
+  
+  <!-- Image Gallery -->
+  <div class="row gallery">
+    
+      <!-- Image 2 - City -->
+      <div class="col-md-4 col-sm-6 mb-4">
+          <div class="card h-100">
+              <img src="images/download.jpg" class="card-img-top" alt="City">
+              <div class="card-body">
+                  <h5 class="card-title">Cityscape</h5>
+                  <div class="image-details collapse" id="details-2">
+                      <p>This stunning cityscape shows the downtown skyline at night with all the lights shining bright.</p>
+                      <p><strong>Photographer:</strong> Jane Smith</p>
+                      <p><strong>Date:</strong> May 22, 2023</p>
+                  </div>
+                  <button class="btn btn-sm btn-primary view-more" data-bs-toggle="collapse" data-bs-target="#details-2">View More</button>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Image 3 - Wildlife -->
+      <div class="col-md-4 col-sm-6 mb-4">
+          <div class="card h-100">
+              <img src="images/imagebg.jpg" class="card-img-top" alt="Wildlife">
+              <div class="card-body">
+                  <h5 class="card-title">Wildlife</h5>
+                  <div class="image-details collapse" id="details-3">
+                      <p>This majestic lion was photographed during a safari in Africa. The golden hour light creates a magical effect.</p>
+                      <p><strong>Photographer:</strong> Mike Johnson</p>
+                      <p><strong>Date:</strong> April 10, 2023</p>
+                  </div>
+                  <button class="btn btn-sm btn-primary view-more" data-bs-toggle="collapse" data-bs-target="#details-3">View More</button>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Image 4 - Food -->
+      <div class="col-md-4 col-sm-6 mb-4">
+          <div class="card h-100">
+              <img src="images/images-1.jpg" class="card-img-top" alt="Food">
+              <div class="card-body">
+                  <h5 class="card-title">Cuisine</h5>
+                  <div class="image-details collapse" id="details-4">
+                      <p>This delicious dish was prepared by a Michelin-star chef in Paris. It features locally sourced ingredients.</p>
+                      <p><strong>Photographer:</strong> Sarah Williams</p>
+                      <p><strong>Date:</strong> March 5, 2023</p>
+                  </div>
+                  <button class="btn btn-sm btn-primary view-more" data-bs-toggle="collapse" data-bs-target="#details-4">View More</button>
+              </div>
+          </div>
+      </div>
+
+            <!-- Image 1 - Nature -->
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card h-100">
+                  <img src="images/images-5.jpg" class="card-img-top" alt="Nature">
+                  <div class="card-body">
+                      <h5 class="card-title">Nature</h5>
+                      <div class="image-details collapse">
+                          <p>This beautiful nature scene was captured in the Pacific Northwest. It features lush greenery and a serene landscape.</p>
+                          <p><strong>Photographer:</strong> John Doe</p>
+                          <p><strong>Date:</strong> June 15, 2023</p>
+                      </div>
+                      <button class="btn btn-sm btn-primary view-more" data-bs-toggle="collapse" data-bs-target="#details-1">View More</button>
+                  </div>
+              </div>
+          </div>
+
+      <!-- Image 5 - Beach -->
+      <div class="col-md-4 col-sm-6 mb-4">
+          <div class="card h-100">
+              <img src="images/book-863418_1280.jpg" class="card-img-top" alt="Beach">
+              <div class="card-body">
+                  <h5 class="card-title">Beach</h5>
+                  <div class="image-details collapse" id="details-5">
+                      <p>Tropical paradise with crystal clear water and white sand. This beach is located in the Maldives.</p>
+                      <p><strong>Photographer:</strong> David Brown</p>
+                      <p><strong>Date:</strong> February 18, 2023</p>
+                  </div>
+                  <button class="btn btn-sm btn-primary view-more" data-bs-toggle="collapse" data-bs-target="#details-5">View More</button>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Image 6 - Mountain -->
+      <div class="col-md-4 col-sm-6 mb-4">
+          <div class="card h-100">
+              <img src="images/images.png" class="card-img-top" alt="Mountain">
+              <div class="card-body">
+                  <h5 class="card-title">Mountain</h5>
+                  <div class="image-details collapse" id="details-6">
+                      <p>The Swiss Alps at sunrise. This breathtaking view was captured after a 3-hour hike to the summit.</p>
+                      <p><strong>Photographer:</strong> Emily Davis</p>
+                      <p><strong>Date:</strong> January 30, 2023</p>
+                  </div>
+                  <button class="btn btn-sm btn-primary view-more" data-bs-toggle="collapse" data-bs-target="#details-6">View More</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</main>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">Stay Updated</h2>
+            <p class="mb-4">Subscribe to our newsletter for weekly featured photos and photography tips</p>
+            <div class="newsletter-form mx-auto">
+                <input type="email" placeholder="Your email address">
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="footer-brand mb-3">
+                        <i class="fas fa-camera me-2"></i>PhotoVision
+                    </h3>
+                    <p class="footer-about">We showcase the most beautiful images from talented photographers around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Cities</a></li>
+                        <li><a href="#">Animals</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Travel</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Photo St, Creative City</li>
+                        <li><i class="fas fa-phone me-2"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@photovision.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="footer-bottom text-center">
+                <p class="mb-0">&copy; 2023 PhotoVision. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
